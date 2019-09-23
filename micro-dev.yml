@@ -10,9 +10,9 @@ services:
       - MONGODB_USERNAME=dev
       - MONGODB_PASSWORD=12345
       - MONGODB_DATABASE=bda
-  redis_db:
-    image: 'redis'
-    ports:
-      - "6379:6379"
+  # redis_db:
+  #   image: 'redis:alpine'
+  #   ports:
+  #     - "6379:6379"
 volumes:
   data-db:
