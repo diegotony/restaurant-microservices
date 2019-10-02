@@ -17,7 +17,7 @@ for i in kongAdmin:
                 data={
                     'name': m,
                     'url': '{0}/{1}'.format(k, m)})
-            print(response.status_code)
+            print("Added service /{0} , status: {1}".format(m,response.status_code))
 
 #  Added Routes
 for i in kongAdmin:
@@ -25,4 +25,28 @@ for i in kongAdmin:
         response = requests.post('{0}/services/{1}/routes'.format(i,l),data={
             'paths': ['/{0}'.format(l)],
             'methods': ['GET', 'POST', 'PUT', 'DELETE']})
-        print(response.status_code)
+        print("Added route /{0} , status: {1}".format(l,response.status_code))
+
+
+for i in kongAdmin:
+    for  l in routesServices:
+        response = requests.post('{0}/services/{1}/plugins'.format(i,l),
+        data={
+            'name':'cors',
+            'config.origins':'*',
+            'config.methods':'GET',
+            'config.methods':'POST',
+            'config.methods':'PUT',
+            'config.methods':'DELETE',
+            'config.headers':'Accept',
+            'config.headers':'Accept-Version',
+            'config.headers':'Content-Length',
+            'config.headers':'Content-MD5',
+            'config.headers':'Content-Type',
+            'config.headers':'Date',
+            'config.headers':'X-Auth-Token',
+            'config.exposed_headers':'X-Auth-Token',
+            'config.credentials':'true',
+            'config.max_age':'3600'
+            })
+        print("Added cors /{0} , status: {1}".format(l,response.status_code))
