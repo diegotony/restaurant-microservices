@@ -2,7 +2,9 @@ import os
 import requests
 import json
 
-kongAdmin = ["http://localhost:8001"]
+ADMIN_URL = "http://localhost:8001"
+
+kongAdmin = [ADMIN_URL]
 ips = ['http://172.28.1.5:1396']
 routesServices = []
 with open ('routes.txt') as f:

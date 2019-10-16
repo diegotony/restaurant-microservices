@@ -44,11 +44,11 @@ services:
     links:
       - kong-database
       - kong-migration
-      - order-service
+      - order-micro
     depends_on:
       - kong-database
       - kong-migration
-      - order-service
+      - order-micro
     environment:
       - KONG_DATABASE=postgres
       - KONG_PG_HOST=kong-database
@@ -65,35 +65,37 @@ services:
       timeout: 2s
       retries: 15
 
-#  Services
-  mongo_db-prod:
-    image: 'mongo'
-    container_name: mongo_db
+##DBs
+  mongodb-order:
+    image: 'bitnami/mongodb'
+    container_name: mongodb-order
     restart: always
     ports:
       - "27017:27017"
     volumes:
-      - data-db:/data/db
+      - mongodb-data:/data/db/order
     networks:
       - kong-net
-  order-service:
+# Services
+
+  order-micro:
     restart: always
     image: diegotony/orden-micro:travis
     ports:
       - "1396:1396"
     environment:
-      - MONGO_URI=mongodb://mongo_db:27017/order
+      - MONGO_URI=mongodb://mongodb-order:27017/order
       - PORT=1396
     depends_on:
-      - mongo_db-prod
+      - mongodb-order
     links:
-      - mongo_db-prod
+      - mongodb-order
     networks:
       kong-net:
         ipv4_address: 172.28.1.5
 
 volumes:
-  data-db:
+  mongodb-data:
 
 networks:
   kong-net:

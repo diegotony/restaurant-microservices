@@ -1,0 +1,10 @@
+order-service:
+  host: "172.28.1.5"
+  port: "1396"
+  name: "order-service"
+  url: "api/order/v1"
+  routes:
+    - catalog
+    - item
+    - order
+    - table

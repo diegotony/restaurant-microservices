@@ -1,0 +1,23 @@
+routes:
+  methods: 
+    - GET
+    - POST
+    - PUT
+    - DELETE
+plugins:
+  name: "cors"
+  config.origins: '*'
+  config.methods: 'POST'
+  config.methods: 'PUT'
+  config.methods: 'DELETE'
+  config.headers: 'Accept' 
+  config.headers: 'Accept-Version'
+  config.headers: 'Content-Length'
+  config.headers: 'Content-MD5'
+  config.headers: 'Content-Type'
+  config.headers: 'Date'
+  config.headers: 'X-Auth-Token'
+  config.exposed_headers: 'X-Auth-Token'
+  config.credentials: 'true'
+  config.max_age: '3600'
+  
