@@ -47,3 +47,29 @@ ips:
     order: 172.28.1.4
     payment: 172.28.1.5
     frontend: 172.28.1.6
+
+db:
+  develop:
+    billing: 27017
+    client: 27017
+    delivery: 27017
+    order: 27017
+    payment: 27017
+    frontend: 27017
+    alt: 27017
+  stagging:
+    billing: 27011
+    client: 27012
+    delivery: 27013
+    order: 27014
+    payment: 27015
+    frontend: 27016
+    alt: 4027
+  # production:
+  #   billing: 5003
+  #   client: 5009
+  #   delivery: 5011
+  #   order: 5021
+  #   payment: 5023
+  #   frontend: 5039
+  #   alt: 5051
