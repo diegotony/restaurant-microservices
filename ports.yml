@@ -58,13 +58,11 @@ db:
     frontend: 27017
     alt: 27017
   stagging:
-    billing: 27011
-    client: 27012
-    delivery: 27013
-    order: 27014
-    payment: 27015
-    frontend: 27016
-    alt: 4027
+    billing: 27018
+    client: 27019
+    delivery: 27020
+    order: 27021
+    payment: 27022
   # production:
   #   billing: 5003
   #   client: 5009
