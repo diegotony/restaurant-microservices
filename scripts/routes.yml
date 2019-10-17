@@ -1,6 +1,31 @@
+billing-service:
+  host: "172.28.1.1"
+  port: "4003"
+  name: "order-service"
+  url: "api/billing/v1"
+  routes:
+    - billing
+
+client-service:
+  host: "172.28.1.2"
+  port: "4003"
+  name: "client-service"
+  url: "api/client/v1"
+  routes:
+    - users
+
+
+delivery-service:
+  host: "172.28.1.3"
+  port: "4001"
+  name: "delivery-service"
+  url: "api/delivery/v1"
+  routes:
+    - delivery
+
 order-service:
-  host: "172.28.1.5"
-  port: "1396"
+  host: "172.28.1.4"
+  port: "4003"
   name: "order-service"
   url: "api/order/v1"
   routes:
@@ -8,3 +33,12 @@ order-service:
     - item
     - order
     - table
+
+payment-service:
+  host: "172.28.1.5"
+  port: "4003"
+  name: "payment-service"
+  url: "api/payment/v1"
+  routes:
+    - payment/paypal/payment
+

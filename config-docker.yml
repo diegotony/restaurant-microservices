@@ -65,6 +65,42 @@ services:
       timeout: 2s
       retries: 15
 
+# Services
+
+  order-micro:
+    restart: always
+    image: diegotony/orden-micro:travis
+    ports:
+      - "4001:4001"
+    environment:
+      - MONGO_URI=mongodb://mongodb-order:27017/order
+      - PORT=4001
+    depends_on:
+      - mongodb-order
+    links:
+      - mongodb-order
+    networks:
+      kong-net:
+        ipv4_address: 172.28.1.5
+
+  billing-micro:
+    restart: always
+    image: diegotony/billing-micro:travis
+    ports:
+      - "4003:4003"
+    environment:
+      - MONGO_URI=mongodb://mongodb-billing:27017/billing
+      - PORT=4003
+    depends_on:
+      - mongodb-billing
+    links:
+      - mongodb-billing
+    networks:
+      kong-net:
+        ipv4_address: 172.28.1.5
+
+
+
 ##DBs
   mongodb-order:
     image: 'bitnami/mongodb'
@@ -76,23 +112,17 @@ services:
       - mongodb-data:/data/db/order
     networks:
       - kong-net
-# Services
 
-  order-micro:
+  mongodb-billing:
+    image: 'bitnami/mongodb'
+    container_name: mongodb-billing
     restart: always
-    image: diegotony/orden-micro:travis
     ports:
-      - "1396:1396"
-    environment:
-      - MONGO_URI=mongodb://mongodb-order:27017/order
-      - PORT=1396
-    depends_on:
-      - mongodb-order
-    links:
-      - mongodb-order
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db/billing
     networks:
-      kong-net:
-        ipv4_address: 172.28.1.5
+      - kong-net
 
 volumes:
   mongodb-data:
