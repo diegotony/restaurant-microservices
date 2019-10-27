@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-client
+  labels:
+    app: mongodb-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb-client  
+  template:
+    metadata:
+      labels:
+        app: mongodb-client  
+    spec:
+      containers:
+      - image: bitnami/mongodb
+        name: mongodb-client
+        ports:
+        - containerPort: 27017
+        resources: {}
+        volumeMounts:
+        - mountPath: /data/db/client
+          name: mongodb-client
+      restartPolicy: Always
+      volumes:
+      - name: mongodb-client
+        persistentVolumeClaim:
+          claimName: mongodb-client
+status: {}

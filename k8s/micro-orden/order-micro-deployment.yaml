@@ -1,0 +1,35 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.19.0 (f63a961c)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: order-micro
+  name: order-micro
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.19.0 (f63a961c)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: order-micro
+    spec:
+      containers:
+      - env:
+        - name: MONGO_URI
+          value: mongodb://mongodb-order:27017/order
+        - name: PORT
+          value: "4013"
+        image: diegotony/orden-micro:travis
+        name: order-micro
+        ports:
+        - containerPort: 4013
+        resources: {}
+      restartPolicy: Always
+status: {}

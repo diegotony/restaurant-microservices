@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.19.0 (f63a961c)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: billing-micro
+  name: billing-micro
+spec:
+  replicas: 1
+  strategy: {}
+  selector:
+    matchLabels:
+      app: billing-micro
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.19.0 (f63a961c)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: billing-micro
+    spec:
+      containers:
+      - env:
+        - name: MONGO_URI
+          value: mongodb://mongodb-billing:27017/billing
+        - name: PORT
+          value: "4001"
+        image: diegotony/billing-micro:travis
+        name: billing-micro
+        ports:
+        - containerPort: 4001
+        resources: {}
+      restartPolicy: Always
+status: {}
