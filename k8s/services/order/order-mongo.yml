@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: orden-mongo-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: orden-mongo
+spec:
+  selector:
+    app: orden-mongo
+  ports:
+    - port: 27017
+      targetPort: 27017
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orden-mongo
+spec:
+  selector:
+    matchLabels:
+      app: orden-mongo
+  template:
+    metadata:
+      labels:
+        app: orden-mongo
+    spec:
+      containers:
+        - name: orden-mongo
+          image: mongo
+          ports:
+            - containerPort: 27017
+          volumeMounts:
+           - name: orden-storage
+             mountPath: /data/db
+      volumes:
+        - name: orden-storage
+          persistentVolumeClaim:
+            claimName: orden-mongo-pvc
