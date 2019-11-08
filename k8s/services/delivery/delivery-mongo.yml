@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: delivery-mongo-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: delivery-mongo
+spec:
+  selector:
+    app: delivery-mongo
+  ports:
+    - port: 27017
+      targetPort: 27017
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: delivery-mongo
+spec:
+  selector:
+    matchLabels:
+      app: delivery-mongo
+  template:
+    metadata:
+      labels:
+        app: delivery-mongo
+    spec:
+      containers:
+        - name: delivery-mongo
+          image: mongo
+          ports:
+            - containerPort: 27017
+          volumeMounts:
+           - name: delivery-storage
+             mountPath: /data/db
+      volumes:
+        - name: delivery-storage
+          persistentVolumeClaim:
+            claimName: delivery-mongo-pvc
