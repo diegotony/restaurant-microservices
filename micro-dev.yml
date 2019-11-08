@@ -6,10 +6,6 @@ services:
       - "27017:27017"
     volumes:
       - data-db:/data/db
-    environment:
-      - MONGODB_USERNAME=dev
-      - MONGODB_PASSWORD=12345
-      - MONGODB_DATABASE=bda
   # redis_db:
   #   image: 'redis:alpine'
   #   ports:
