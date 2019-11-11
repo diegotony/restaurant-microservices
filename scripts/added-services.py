@@ -3,7 +3,7 @@ import os
 import requests
 import json
 
-kong = "http://localhost:8001"
+kong = "http://192.168.39.170:32036"
 #  load routes file
 with open('routes.yml','r') as ymlfile:
     serCfg = yaml.load(ymlfile,Loader=yaml.FullLoader)
