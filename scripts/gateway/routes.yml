@@ -7,33 +7,31 @@
 #     - billing
 
 # client-service:
-#   host: "172.28.1.2"
-#   port: "4003"
+#   host: "192.168.39.119"
+#   port: "32153"
 #   name: "client-service"
-#   url: "api/client/v1"
 #   routes:
 #     - users
+    # - users/check/
 
-
-delivery-service:
-  host: "192.168.39.170"
-  port: "30659"
-  name: "delivery-service"
-  url: "api/delivery/v1"
-  routes:
-    - delivery
-
-# order-service:
-#   host: "172.28.1.4"
-#   port: "4003"
-#   name: "order-service"
-#   url: "api/order/v1"
+# delivery-service:
+#   host: "192.168.39.170"
+#   port: "30659"
+#   name: "delivery-service"
+#   url: "api/delivery/v1"
 #   routes:
-#     - catalog
-#     - item
-#     - order
-#     - table
+#     - delivery
 
+order-service:
+  host: "192.168.39.23"
+  port: "30899"
+  name: "order-service"
+  routes:
+    - catalog
+    - item
+    - order
+    - table
+    # - table/check
 # payment-service:
 #   host: "172.28.1.5"
 #   port: "4003"

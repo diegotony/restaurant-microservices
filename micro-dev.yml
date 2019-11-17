@@ -6,9 +6,9 @@ services:
       - "27017:27017"
     volumes:
       - data-db:/data/db
-  # redis_db:
-  #   image: 'redis:alpine'
-  #   ports:
-  #     - "6379:6379"
+#  redis_db:
+#    image: 'redis:alpine'
+#    ports:
+#      - "6379:6379"
 volumes:
   data-db:
