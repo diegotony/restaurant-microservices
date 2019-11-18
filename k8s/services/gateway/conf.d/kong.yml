@@ -1,9 +1,23 @@
 _format_version: "1.1"
 
 services:
-- name: mocky
-  url: http://www.mocky.io/v2/5ca725833400002c4876b363
+- name: api-order
+  url:  http://192.168.39.63:31222
   routes:
-  - name: mocky
+  - name: api-order
     paths:
-    - /mocky
+    - /api-order
+
+- name: api-client
+  url:  http://192.168.39.63:30665
+  routes:
+  - name: api-client
+    paths:
+    - /api-client
+
+# - name: api-billing
+#   url: http://192.168.39.60:31291
+#   routes:
+#   - name: api-order
+#     paths:
+#     - /api-billing
