@@ -1,0 +1,23 @@
+_format_version: "1.1"
+
+services:
+- name: api-order
+  url:  https://www.google.com/
+  routes:
+  - name: api-order
+    paths:
+    - /api-order
+
+- name: api-client
+  url:  http://172.28.1.2:4003
+  routes:
+  - name: api-client
+    paths:
+    - /api-client
+
+- name: api-order
+  url: http://172.28.1.4:4013
+  routes:
+  - name: api-order
+    paths:
+    - /api-order

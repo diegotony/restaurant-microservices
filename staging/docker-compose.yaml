@@ -1,0 +1,122 @@
+version: '3'
+
+################################################################
+#                Volumes and Networks                          #
+################################################################
+
+volumes:
+  mongodb-client:
+  mongodb-order:
+  kong-vol:
+
+networks:
+  kong-net:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "false"
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/16
+
+
+services:
+
+
+################################################################
+#                Kong DBLess Configuration                     #
+################################################################
+  kong:
+    container_name: kong
+    image: diegotony/kong-nodb:1.0
+    restart: always
+    networks:
+      - kong-net
+    environment:
+      - KONG_DATABASE=off
+      - KONG_DECLARATIVE_CONFIG=kong.yml
+    ports:
+      - "8000:8000/tcp"
+      - "8443:8443/tcp"
+      - "8001:8001/tcp"
+      - "8444:8444/tcp"
+    links:
+      - client-micro
+      - order-micro
+    depends_on:
+      - client-micro
+      - order-micro
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://kong:8001"]
+      interval: 5s
+      timeout: 2s
+      retries: 15
+
+# ###############################################################
+# #                         DATABASES                           #
+# ###############################################################
+  mongodb-client:
+    image: 'mongo'
+    container_name: mongodb-client
+    restart: always
+    ports:
+      - "27019:27017"
+
+    volumes:
+      - mongodb-client:/data/db/client
+    networks:
+      - kong-net
+
+  
+  mongodb-order:
+    image: 'mongo'
+    container_name: mongodb-order
+    restart: always
+    ports:
+      - "27021:27017"
+
+    volumes:
+      - mongodb-order:/data/db/order
+    networks:
+      - kong-net
+
+# #############################################################
+# #                        Services                           #
+# #############################################################
+  client-micro:
+    restart: always
+    image: diegotony/client-micro:k8s
+    ports:
+      - "4003:4003"
+    environment:
+      - MONGO_HOST=mongodb-client
+      - PORT=4003
+    depends_on:
+      - mongodb-client
+    links:
+      - mongodb-client
+    networks:
+      kong-net:
+        ipv4_address: 172.28.1.2
+
+
+  order-micro:
+    restart: always
+    image: diegotony/orden-micro:k8s
+    ports:
+      - "4013:4013"
+    environment:
+      - MONGO_HOST=mongodb-order
+      - PORT=4013
+    depends_on:
+      - mongodb-order
+    links:
+      - mongodb-order
+    networks:
+      kong-net:
+        ipv4_address: 172.28.1.4
+
+
+
+
