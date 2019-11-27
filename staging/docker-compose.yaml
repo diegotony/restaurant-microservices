@@ -7,6 +7,7 @@ version: '3'
 volumes:
   mongodb-client:
   mongodb-order:
+  mongodb-payment:
   kong-vol:
 
 networks:
@@ -62,7 +63,6 @@ services:
     restart: always
     ports:
       - "27019:27017"
-
     volumes:
       - mongodb-client:/data/db/client
     networks:
@@ -75,9 +75,19 @@ services:
     restart: always
     ports:
       - "27021:27017"
-
     volumes:
       - mongodb-order:/data/db/order
+    networks:
+      - kong-net
+
+  mongodb-payment:
+    image: 'mongo'
+    container_name: mongodb-payment
+    restart: always
+    ports:
+      - "27023:27017"
+    volumes:
+      - mongodb-payment:/data/db/payment
     networks:
       - kong-net
 
@@ -117,6 +127,20 @@ services:
       kong-net:
         ipv4_address: 172.28.1.4
 
-
+  order-payment:
+    restart: always
+    image: diegotony/payment-micro:k8s
+    ports:
+      - "3041:3041"
+    environment:
+      - MONGO_HOST=mongodb-payment
+      - PORT=3041
+    depends_on:
+      - mongodb-payment
+    links:
+      - mongodb-payment
+    networks:
+      kong-net:
+        ipv4_address: 172.28.1.6
 
 

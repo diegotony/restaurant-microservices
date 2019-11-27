@@ -21,3 +21,10 @@ services:
   - name: api-order
     paths:
     - /api-order
+
+- name: api-payment
+  url: http://172.28.1.6:3041
+  routes:
+  - name: api-payment
+    paths:
+    - /api-payment
