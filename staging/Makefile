@@ -7,7 +7,10 @@ build:
 
 up-server:
 	docker build  -t $(IMAGE)b . --no-cache
-	docker-compose -f $(FILE) up
+	docker-compose -f $(FILE) up -d
+	./ngrok http http://localhost:8000
+
+
 
 down-server:
 	docker-compose -f $(FILE) down
