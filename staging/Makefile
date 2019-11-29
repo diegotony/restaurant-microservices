@@ -10,6 +10,10 @@ up-server:
 	docker-compose -f $(FILE) up -d
 	./ngrok http http://localhost:8000
 
+update-images:
+	docker pull diegotony/orden-micro:k8s
+	docker pull diegotony/fee-micro:k8s
+	docker pull diegotony/client-micro:k8s
 
 
 down-server:

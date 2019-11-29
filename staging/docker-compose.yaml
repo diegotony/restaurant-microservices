@@ -7,7 +7,7 @@ version: '3'
 volumes:
   mongodb-client:
   mongodb-order:
-  mongodb-payment:
+  mongodb-fee:
   kong-vol:
 
 networks:
@@ -80,14 +80,15 @@ services:
     networks:
       - kong-net
 
-  mongodb-payment:
+
+  mongodb-fee:
     image: 'mongo'
-    container_name: mongodb-payment
+    container_name: mongodb-fee
     restart: always
     ports:
       - "27023:27017"
     volumes:
-      - mongodb-payment:/data/db/payment
+      - mongodb-fee:/data/db/fee
     networks:
       - kong-net
 
@@ -127,22 +128,22 @@ services:
       kong-net:
         ipv4_address: 172.28.1.4
 
-  order-payment:
+  fee-micro:
     restart: always
-    image: diegotony/payment-micro:k8s
+    image: diegotony/fee-micro:k8s
     ports:
       - "3041:3041"
     environment:
-      - MONGO_HOST=mongodb-payment
+      - MONGO_HOST=mongodb-fee
       - PORT=3041
       - MODE=sandbox
       - CLIENT_ID=EBWKjlELKMYqRNQ6sYvFo64FtaRLRR5BdHEESmha49TM
       - CLIENT_SECRET=EO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHEESmha49TM
 
     depends_on:
-      - mongodb-payment
+      - mongodb-fee
     links:
-      - mongodb-payment
+      - mongodb-fee
     networks:
       kong-net:
         ipv4_address: 172.28.1.6

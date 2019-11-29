@@ -16,9 +16,9 @@ services:
     paths:
     - /order
 
-- name: api-payment
+- name: api-fee
   url: http://172.28.1.6:3041
   routes:
-  - name: api-payment
+  - name: api-fee
     paths:
-    - /payment
+    - /fee
