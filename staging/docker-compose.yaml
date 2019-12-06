@@ -55,6 +55,18 @@ services:
       retries: 15
 
 # ###############################################################
+# #                         REDIS                               #
+# ###############################################################  
+  redis:
+    container_name: redis
+    image: 'redis:alpine'
+    ports:
+      - "6379:6379"
+    networks:
+      - kong-net
+
+
+# ###############################################################
 # #                         DATABASES                           #
 # ###############################################################
   mongodb-client:
@@ -103,10 +115,13 @@ services:
     environment:
       - MONGO_HOST=mongodb-client
       - PORT=4003
+      - REDIS_HOST=redis
     depends_on:
       - mongodb-client
+      - redis
     links:
       - mongodb-client
+      - redis
     networks:
       kong-net:
         ipv4_address: 172.28.1.2
@@ -120,10 +135,13 @@ services:
     environment:
       - MONGO_HOST=mongodb-order
       - PORT=4013
+      - REDIS_HOST=redis
     depends_on:
       - mongodb-order
+      - redis
     links:
       - mongodb-order
+      - redis
     networks:
       kong-net:
         ipv4_address: 172.28.1.4
@@ -135,6 +153,7 @@ services:
       - "3041:3041"
     environment:
       - MONGO_HOST=mongodb-fee
+      - REDIS_HOST=redis
       - PORT=3041
       - MODE=sandbox
       - CLIENT_ID=EBWKjlELKMYqRNQ6sYvFo64FtaRLRR5BdHEESmha49TM

@@ -7,7 +7,8 @@ services:
       - "27017:27017"
     volumes:
       - data-db:/data/db
-  redis_db:
+  redis:
+    container_name: 'redis'
     image: 'redis:alpine'
     ports:
       - "6379:6379"
