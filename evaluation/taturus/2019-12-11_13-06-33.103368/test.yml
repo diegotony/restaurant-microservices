@@ -1,0 +1,37 @@
+execution:
+- concurrency: 100  # cantidad de usuarios virtuales concurrentes objetivo
+  ramp-up: 1m   # tiempo de aceleración para alcanzar la concurrencia objetivo
+  hold-for: 5m # tiempo para mantener la concurrencia objetivo
+  scenario: quick-test
+  iterations: 500
+
+scenarios:
+  quick-test:
+    requests:
+    - http://8b7de198.ngrok.io/client
+    - http://8b7de198.ngrok.io/order/decree
+    - http://8b7de198.ngrok.io/fee/payments
+
+
+reporting:
+- module: console
+- module: final-stats
+  summary: true
+  percentiles: true 
+  failed-labels: false
+  test-duration: true
+  dump-csv: perf_result_csv.csv
+- module: blazemeter
+  token: 1a851b2729e028621c927589:e6d70ccb687c70a3a66cff99eaed161e588047b88e30e097dbd35711eb35719a3be2e6a8
+  report-name: Taurus test report
+  test: Taurus test
+  project: Taurus test project
+
+
+
+# modules:
+#   blazemeter:
+#     token: 1a851b2729e028621c927589:e6d70ccb687c70a3a66cff99eaed161e588047b88e30e097dbd35711eb35719a3be2e6a8
+#     report-name: Taurus test report
+#     test: Taurus test
+#     project: Taurus test project

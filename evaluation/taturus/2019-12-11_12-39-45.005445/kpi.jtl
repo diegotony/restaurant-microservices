@@ -1,0 +1,143 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,bytes,grpThreads,allThreads,Latency,Hostname,Connect
+1576085993193,23954,https://www.facebook.com,200,OK,quick-test 1-2,true,1080496,41,41,411,kakashi,232
+1576085992755,32876,https://www.facebook.com,200,OK,quick-test 1-1,true,1080551,56,56,785,kakashi,596
+1576085994987,32541,https://www.facebook.com,200,OK,quick-test 1-5,true,1080201,59,59,366,kakashi,195
+1576085996793,72994,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/b6Bmzw4DZvo.js?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: javax.net.ssl.SSLException message:Non HTTP response message: Connection reset, ",quick-test 1-8,false,711753,100,100,1388,kakashi,1211
+1576086005190,66632,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Connection reset,quick-test 1-22,false,3118,100,100,1519,kakashi,1329
+1576086007583,65928,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Connection reset,quick-test 1-26,false,3118,100,100,9690,kakashi,755
+1576086017182,66432,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Connection reset,quick-test 1-42,false,3118,100,100,2368,kakashi,1145
+1576086021384,68372,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Connection reset,quick-test 1-49,false,3118,100,100,8432,kakashi,3125
+1576086031582,67517,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Connection reset,quick-test 1-66,false,3118,100,100,2962,kakashi,2228
+1576086001583,98960,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/y5/l/0,cross/v7YKl11NCSO.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: javax.net.ssl.SSLException message:Non HTTP response message: Connection reset, https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/b6Bmzw4DZvo.js?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: javax.net.ssl.SSLException message:Non HTTP response message: Connection reset, ",quick-test 1-16,false,758671,100,100,368,kakashi,193
+1576086027980,74810,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Connection reset,quick-test 1-60,false,3118,100,100,10211,kakashi,9524
+1576086038787,67186,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Connection reset,quick-test 1-78,false,3118,100,100,5788,kakashi,1341
+1576086044181,66447,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Connection reset,quick-test 1-87,false,3118,100,100,3249,kakashi,889
+1576086045982,72869,https://www.facebook.com,200,OK,quick-test 1-90,true,1080507,100,100,2432,kakashi,1728
+1576086042383,82856,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Connection reset,quick-test 1-84,false,3118,100,100,910,kakashi,558
+1576086050182,94803,https://www.facebook.com,200,OK,quick-test 1-97,true,1081405,100,100,1145,kakashi,579
+1576086046582,104711,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Connection reset,quick-test 1-91,false,3118,100,100,13178,kakashi,9267
+1576086089773,64666,https://www.facebook.com,200,OK,quick-test 1-49,true,1080495,100,100,2106,kakashi,1269
+1576086051989,106791,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/y6/l/0,cross/ZaIW07ioQ-c.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: javax.net.ssl.SSLException message:Non HTTP response message: Connection reset, ",quick-test 1-100,false,1012784,100,100,4257,kakashi,3754
+1576086026782,153139,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/y6/l/0,cross/ZaIW07ioQ-c.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: javax.net.ssl.SSLException message:Non HTTP response message: Connection reset, ",quick-test 1-58,false,924706,100,100,17150,kakashi,16252
+1576086105977,95431,https://www.facebook.com,200,OK,quick-test 1-78,true,1080535,100,100,1733,kakashi,1281
+1576086011782,184134,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/y6/l/0,cross/ZaIW07ioQ-c.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: javax.net.ssl.SSLException message:Non HTTP response message: Connection reset, ",quick-test 1-33,false,969329,100,100,4071,kakashi,2531
+1576086032782,163650,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/y6/l/0,cross/ZaIW07ioQ-c.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: javax.net.ssl.SSLException message:Non HTTP response message: Connection reset, ",quick-test 1-68,false,1012705,100,100,2465,kakashi,1891
+1576086071831,127782,https://www.facebook.com,200,OK,quick-test 1-22,true,1080522,100,100,3308,kakashi,2390
+1576085994384,207240,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/b6Bmzw4DZvo.js?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: javax.net.ssl.SSLException message:Non HTTP response message: Connection reset, ",quick-test 1-4,false,743573,100,100,811,kakashi,550
+1576086154452,63249,https://www.facebook.com,200,OK,quick-test 1-49,true,1080469,100,100,1578,kakashi,802
+1576086179940,37938,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/y5/l/0,cross/v7YKl11NCSO.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yz/l/0,cross/ds0awKznBap.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yG/l/0,cross/HAuXNElXC-I.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/b6Bmzw4DZvo.js?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://facebook.com/security/hsts-pixel.gif?c=3.2.5 code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: facebook.com, ",quick-test 1-58,false,611772,100,100,974,kakashi,770
+1576086102792,116444,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/yz/r/KFyVIAWzntM.ico code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/y6/l/0,cross/ZaIW07ioQ-c.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yP/l/0,cross/I7MGeYV4AeN.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yM/l/0,cross/BBztBb82OHk.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yG/l/0,cross/HAuXNElXC-I.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yz/l/0,cross/_nnyVb-YUxj.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/b6Bmzw4DZvo.js?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/OBaVg52wtTZ.png code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/GsNJNwuI-UM.gif code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://facebook.com/security/hsts-pixel.gif?c=3.2.5 code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: facebook.com, ",quick-test 1-60,false,355086,100,100,676,kakashi,200
+1576086118885,103113,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/b6Bmzw4DZvo.js?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: javax.net.ssl.SSLException message:Non HTTP response message: Connection reset, ",quick-test 1-90,false,743538,100,100,1945,kakashi,800
+1576086023781,198317,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/yz/r/KFyVIAWzntM.ico code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/y6/l/0,cross/ZaIW07ioQ-c.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yP/l/0,cross/I7MGeYV4AeN.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yM/l/0,cross/BBztBb82OHk.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, ",quick-test 1-53,false,802564,100,100,10757,kakashi,10199
+1576086039382,198363,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/yz/r/KFyVIAWzntM.ico code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/y6/l/0,cross/ZaIW07ioQ-c.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yP/l/0,cross/I7MGeYV4AeN.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yM/l/0,cross/BBztBb82OHk.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, ",quick-test 1-79,false,802420,100,100,40665,kakashi,36469
+1576086023182,218403,https://www.facebook.com,200,OK,quick-test 1-52,true,1080494,100,100,12228,kakashi,11672
+1576086207296,35370,https://www.facebook.com,200,OK,quick-test 1-22,true,1080460,100,100,9346,kakashi,8903
+1576086035183,207992,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/yz/r/KFyVIAWzntM.ico code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/y6/l/0,cross/ZaIW07ioQ-c.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yP/l/0,cross/I7MGeYV4AeN.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yM/l/0,cross/BBztBb82OHk.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, ",quick-test 1-72,false,802204,100,100,6010,kakashi,1761
+1576086201436,53194,https://www.facebook.com,200,OK,quick-test 1-78,true,1080376,100,100,16011,kakashi,15465
+1576086029782,227708,https://www.facebook.com,200,OK,quick-test 1-63,true,1176002,100,100,6257,kakashi,5876
+1576086009385,256091,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/yG/l/0,cross/HAuXNElXC-I.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yz/l/0,cross/_nnyVb-YUxj.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/b6Bmzw4DZvo.js?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/OBaVg52wtTZ.png code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/GsNJNwuI-UM.gif code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: static.xx.fbcdn.net, https://facebook.com/security/hsts-pixel.gif?c=3.2.5 code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: facebook.com, ",quick-test 1-29,false,633173,100,100,2194,kakashi,1344
+1576085999187,267776,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/b6Bmzw4DZvo.js?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: javax.net.ssl.SSLException message:Non HTTP response message: Connection reset, ",quick-test 1-12,false,743574,100,100,1217,kakashi,585
+1576086254652,18707,https://www.facebook.com,200,OK,quick-test 1-78,true,1080341,100,100,506,kakashi,211
+1576086207270,71733,https://www.facebook.com,200,OK,quick-test 1-68,true,1168263,100,100,8280,kakashi,7953
+1576085997394,284317,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/b6Bmzw4DZvo.js?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: javax.net.ssl.SSLException message:Non HTTP response message: Connection reset, ",quick-test 1-9,false,743608,100,100,909,kakashi,730
+1576086257495,33686,https://www.facebook.com,200,OK,quick-test 1-63,true,1080464,100,100,7701,kakashi,7303
+1576086110631,183950,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/y6/l/0,cross/ZaIW07ioQ-c.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: javax.net.ssl.SSLException message:Non HTTP response message: Connection reset, ",quick-test 1-87,false,924738,100,100,978,kakashi,627
+1576086008182,287633,https://www.facebook.com,200,OK,quick-test 1-27,true,1080384,99,99,2968,kakashi,2336
+1576086158793,138312,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/yz/r/KFyVIAWzntM.ico code:Non HTTP response code: java.net.SocketException message:Non HTTP response message: La red es inaccesible (connect failed), ",quick-test 1-100,false,1081327,98,98,2082,kakashi,1898
+1576086145033,152072,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/yz/l/0,cross/_nnyVb-YUxj.css?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.SocketException message:Non HTTP response message: La red es inaccesible (connect failed), https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/b6Bmzw4DZvo.js?_nc_x=Ij3Wp8lg5Kz code:Non HTTP response code: java.net.SocketException message:Non HTTP response message: La red es inaccesible (connect failed), ",quick-test 1-97,false,743024,98,98,1263,kakashi,566
+1576086033383,263722,https://www.facebook.com,200,"Embedded resource download error:https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/GsNJNwuI-UM.gif code:Non HTTP response code: java.net.SocketException message:Non HTTP response message: La red es inaccesible (connect failed), https://facebook.com/security/hsts-pixel.gif?c=3.2.5 code:Non HTTP response code: java.net.UnknownHostException message:Non HTTP response message: facebook.com, ",quick-test 1-69,false,1082599,98,98,997,kakashi,772
+1576086279045,18857,https://www.facebook.com,200,OK,quick-test 1-68,true,1175940,95,95,395,kakashi,205
+1576086273383,25075,https://www.facebook.com,200,OK,quick-test 1-78,true,1080359,94,94,944,kakashi,227
+1576086242688,56205,https://www.facebook.com,200,OK,quick-test 1-22,true,1080400,93,93,10194,kakashi,7518
+1576086018382,280627,https://www.facebook.com,Non HTTP response code: org.apache.http.TruncatedChunkException,Non HTTP response message: Truncated chunk (expected size: 49.833; actual size: 11.488),quick-test 1-44,false,1282,92,92,2232,kakashi,1410
+1576086043583,255445,https://www.facebook.com,Non HTTP response code: org.apache.http.TruncatedChunkException,Non HTTP response message: Truncated chunk (expected size: 13.429; actual size: 10.190),quick-test 1-86,false,1282,91,91,20030,kakashi,1143
+1576086011184,14047,https://www.facebook.com,200,OK,quick-test 1-32,true,128980,91,91,4352,kakashi,3738
+1576086015383,13596,https://www.facebook.com,200,OK,quick-test 1-39,true,128532,90,90,1167,kakashi,894
+1576086006384,56803,https://www.facebook.com,200,OK,quick-test 1-24,true,128762,91,91,1519,kakashi,860
+1576086219249,7156,https://www.facebook.com,200,OK,quick-test 1-60,true,128467,90,90,1366,kakashi,972
+1576086069902,57156,https://www.facebook.com,200,OK,quick-test 1-8,true,128675,90,90,1437,kakashi,816
+1576086028585,17166,https://www.facebook.com,200,OK,quick-test 1-61,true,128764,89,89,6545,kakashi,6283
+1576086207072,13470,https://www.facebook.com,200,OK,quick-test 1-33,true,132944,89,89,8021,kakashi,7844
+1576086045383,19063,https://www.facebook.com,200,OK,quick-test 1-89,true,128767,89,89,6049,kakashi,4974
+1576086073515,22107,https://www.facebook.com,200,OK,quick-test 1-26,true,128917,89,89,2611,kakashi,1939
+1576086047781,16678,https://www.facebook.com,200,OK,quick-test 1-93,true,128690,83,83,4352,kakashi,3774
+1576085996195,5277,https://www.facebook.com,200,OK,quick-test 1-7,true,128653,83,83,582,kakashi,195
+1576086241606,986,https://www.facebook.com,200,OK,quick-test 1-52,true,128684,82,82,466,kakashi,194
+1576086000983,7128,https://www.facebook.com,200,OK,quick-test 1-15,true,128816,81,81,1154,kakashi,772
+1576086217906,15665,https://www.facebook.com,200,OK,quick-test 1-58,true,128720,80,80,2099,kakashi,1212
+1576086281724,10836,https://www.facebook.com,200,OK,quick-test 1-9,true,81836,79,79,8277,kakashi,7889
+1576086099102,9230,https://www.facebook.com,200,OK,quick-test 1-66,true,128856,79,79,2325,kakashi,1716
+1576086151296,10036,https://www.facebook.com,200,OK,quick-test 1-91,true,128664,78,78,2441,kakashi,1687
+1576086100617,14686,https://www.facebook.com,200,OK,quick-test 1-16,true,128465,78,78,2430,kakashi,1491
+1576086222019,7723,https://www.facebook.com,200,OK,quick-test 1-90,true,128484,78,78,1113,kakashi,751
+1576086015984,27488,https://www.facebook.com,200,OK,quick-test 1-40,true,128766,78,78,1142,kakashi,818
+1576086000392,9961,https://www.facebook.com,200,OK,quick-test 1-14,true,128428,78,78,542,kakashi,213
+1576086049584,134979,https://www.facebook.com,200,OK,quick-test 1-96,true,128719,78,78,10222,kakashi,9695
+1576086017169,13703,https://www.facebook.com,200,OK,quick-test 1-2,true,128459,78,78,1123,kakashi,801
+1576086012383,15186,https://www.facebook.com,200,OK,quick-test 1-34,true,128759,78,78,2957,kakashi,2734
+1576086027545,28672,https://www.facebook.com,200,OK,quick-test 1-5,true,128505,76,76,3797,kakashi,1924
+1576086038184,44310,https://www.facebook.com,200,OK,quick-test 1-77,true,128597,76,76,3405,kakashi,2883
+1576086050785,12654,https://www.facebook.com,200,OK,quick-test 1-98,true,128743,76,76,3147,kakashi,1344
+1576086024381,274701,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Socket closed,quick-test 1-54,false,2618,76,76,18979,kakashi,16328
+1576085999795,6220,https://www.facebook.com,200,OK,quick-test 1-13,true,132757,76,76,552,kakashi,219
+1576086016584,14984,https://www.facebook.com,200,OK,quick-test 1-41,true,128607,62,62,1316,kakashi,1004
+1576086048381,14605,https://www.facebook.com,200,OK,quick-test 1-94,true,128820,62,62,1582,kakashi,1314
+1576086217718,9236,https://www.facebook.com,200,OK,quick-test 1-49,true,128596,62,62,1093,kakashi,539
+1576086222108,12525,https://www.facebook.com,200,OK,quick-test 1-53,true,128577,60,60,553,kakashi,212
+1576086037582,36836,https://www.facebook.com,200,OK,quick-test 1-76,true,82054,60,60,1695,kakashi,1179
+1576086012983,18724,https://www.facebook.com,200,OK,quick-test 1-35,true,128720,58,58,1417,kakashi,584
+1576086020186,10337,https://www.facebook.com,200,OK,quick-test 1-47,true,81984,57,57,3400,kakashi,2733
+1576085997990,6715,https://www.facebook.com,200,OK,quick-test 1-10,true,128434,55,55,354,kakashi,184
+1576086004586,294537,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Socket closed,quick-test 1-21,false,2618,54,54,5798,kakashi,5203
+1576086048983,10575,https://www.facebook.com,200,OK,quick-test 1-95,true,128808,53,53,2564,kakashi,1721
+1576086030382,18930,https://www.facebook.com,200,OK,quick-test 1-64,true,128813,53,53,6163,kakashi,5815
+1576086034583,264545,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Socket closed,quick-test 1-71,false,2618,51,51,649,kakashi,190
+1576086003988,295143,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Socket closed,quick-test 1-20,false,2618,50,50,991,kakashi,763
+1576086006983,8141,https://www.facebook.com,200,OK,quick-test 1-25,true,81992,49,49,1071,kakashi,887
+1576086010582,13700,https://www.facebook.com,200,OK,quick-test 1-31,true,128813,49,49,4139,kakashi,1328
+1576086021991,15992,https://www.facebook.com,200,OK,quick-test 1-50,true,128722,48,48,3918,kakashi,3586
+1576086002182,18893,https://www.facebook.com,200,OK,quick-test 1-17,true,128768,47,47,4093,kakashi,2937
+1576086041783,15524,https://www.facebook.com,200,OK,quick-test 1-83,true,128787,46,46,1150,kakashi,754
+1576086051392,11247,https://www.facebook.com,200,OK,quick-test 1-99,true,128465,46,46,1497,kakashi,894
+1576086022582,14781,https://www.facebook.com,200,OK,quick-test 1-51,true,81864,45,45,2992,kakashi,2755
+1576086024984,274167,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Socket closed,quick-test 1-55,false,2618,44,44,10866,kakashi,10086
+1576086047182,17937,https://www.facebook.com,200,OK,quick-test 1-92,true,166904,40,40,3053,kakashi,2472
+1576086040589,20918,https://www.facebook.com,200,OK,quick-test 1-81,true,128679,40,40,3261,kakashi,3031
+1576086026182,16707,https://www.facebook.com,200,OK,quick-test 1-57,true,128672,38,38,9285,kakashi,8388
+1576086002783,11669,https://www.facebook.com,200,OK,quick-test 1-18,true,128780,37,37,869,kakashi,586
+1576086014784,13209,https://www.facebook.com,200,OK,quick-test 1-38,true,128488,36,36,1353,kakashi,720
+1576086033983,22360,https://www.facebook.com,200,OK,quick-test 1-70,true,128598,36,36,2787,kakashi,1167
+1576086207318,15077,https://www.facebook.com,200,OK,quick-test 1-4,true,128467,36,36,9266,kakashi,8626
+1576085993784,5193,https://www.facebook.com,200,OK,quick-test 1-3,true,128742,34,34,470,kakashi,291
+1576086020784,13635,https://www.facebook.com,200,OK,quick-test 1-48,true,128764,33,33,2670,kakashi,904
+1576086041187,22657,https://www.facebook.com,200,OK,quick-test 1-82,true,132776,33,33,3616,kakashi,2938
+1576086003385,13564,https://www.facebook.com,200,OK,quick-test 1-19,true,128493,31,31,2512,kakashi,2344
+1576086018982,13351,https://www.facebook.com,200,OK,quick-test 1-45,true,128628,31,31,1188,kakashi,551
+1576086039982,19067,https://www.facebook.com,200,OK,quick-test 1-80,true,128821,31,31,4589,kakashi,3681
+1576086044782,232654,https://www.facebook.com,200,OK,quick-test 1-88,true,128876,29,29,3149,kakashi,531
+1576086243185,6269,https://www.facebook.com,200,OK,quick-test 1-72,true,128715,29,29,3706,kakashi,3219
+1576086008785,11499,https://www.facebook.com,200,OK,quick-test 1-28,true,129686,27,27,1007,kakashi,214
+1576086125241,14881,https://www.facebook.com,200,OK,quick-test 1-84,true,128671,26,26,1814,kakashi,838
+1576086025580,24635,https://www.facebook.com,200,OK,quick-test 1-56,true,128860,25,25,9776,kakashi,9549
+1576086030982,22446,https://www.facebook.com,200,OK,quick-test 1-65,true,128758,24,24,3510,kakashi,2964
+1576086019583,12494,https://www.facebook.com,200,OK,quick-test 1-46,true,128686,23,23,1967,kakashi,1322
+1576086009984,10865,https://www.facebook.com,200,OK,quick-test 1-30,true,128833,23,23,4128,kakashi,758
+1576086013582,17213,https://www.facebook.com,200,OK,quick-test 1-36,true,128813,21,21,3947,kakashi,3665
+1576086027382,271832,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Socket closed,quick-test 1-59,false,2618,20,20,73632,kakashi,59593
+1576086014186,12106,https://www.facebook.com,200,OK,quick-test 1-37,true,81827,17,17,793,kakashi,204
+1576086005782,133665,https://www.facebook.com,200,OK,quick-test 1-23,true,132989,16,16,1465,kakashi,578
+1576086265519,8208,https://www.facebook.com,200,OK,quick-test 1-29,true,128604,15,15,5208,kakashi,4876
+1576086237756,61482,https://www.facebook.com,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,quick-test 1-79,false,2536,14,14,0,kakashi,61482
+1576086017785,281455,https://www.facebook.com,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: Socket closed,quick-test 1-43,false,2618,14,14,1309,kakashi,803
+1576086035782,22610,https://www.facebook.com,200,OK,quick-test 1-73,true,166834,14,14,2711,kakashi,2474
+1576086266984,18654,https://www.facebook.com,200,OK,quick-test 1-12,true,128299,12,12,16020,kakashi,15459
+1576085995598,1940,https://www.facebook.com,200,OK,quick-test 1-6,true,128670,10,10,1533,kakashi,1353
+1576086032181,22579,https://www.facebook.com,200,OK,quick-test 1-67,true,128753,10,10,5499,kakashi,4098
+1576086029188,20482,https://www.facebook.com,200,OK,quick-test 1-62,true,128605,10,10,6148,kakashi,5851
+1576086042982,14999,https://www.facebook.com,200,OK,quick-test 1-85,true,128712,10,10,3760,kakashi,2950
+1576086083618,9781,https://www.facebook.com,200,OK,quick-test 1-42,true,128771,9,9,2663,kakashi,1886
+1576085998591,6732,https://www.facebook.com,200,OK,quick-test 1-11,true,128680,7,7,1040,kakashi,863
+1576086036383,25493,https://www.facebook.com,200,OK,quick-test 1-74,true,128713,6,6,3405,kakashi,2692
+1576086291191,7245,https://www.facebook.com,200,OK,quick-test 1-63,true,128600,5,5,1199,kakashi,760
+1576086036983,14949,https://www.facebook.com,200,OK,quick-test 1-75,true,128759,4,4,1097,kakashi,876
+1576086025658,30135,https://www.facebook.com,200,OK,quick-test 1-1,true,128503,3,3,16492,kakashi,16128

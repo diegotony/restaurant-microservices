@@ -1,0 +1,25 @@
+---
+execution:
+- concurrency: 100
+  hold-for: 5m
+  iterations: 1000
+  ramp-up: 1m
+  scenario: quick-test
+reporting:
+- module: console
+- dump-csv: perf_result_csv.csv
+  failed-labels: false
+  module: final-stats
+  percentiles: true
+  summary: true
+  test-duration: true
+- module: blazemeter
+  project: Taurus test project
+  report-name: Taurus test report
+  test: Taurus test
+  token: '********'
+scenarios:
+  quick-test:
+    requests:
+    - https://www.facebook.com
+

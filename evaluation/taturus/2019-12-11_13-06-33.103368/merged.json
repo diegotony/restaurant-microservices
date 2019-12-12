@@ -1,0 +1,40 @@
+{
+ "scenarios": {
+  "quick-test": {
+   "requests": [
+    "http://8b7de198.ngrok.io/client", 
+    "http://8b7de198.ngrok.io/order/decree", 
+    "http://8b7de198.ngrok.io/fee/payments"
+   ]
+  }
+ }, 
+ "execution": [
+  {
+   "ramp-up": "1m", 
+   "iterations": 500, 
+   "hold-for": "5m", 
+   "concurrency": 100, 
+   "scenario": "quick-test"
+  }
+ ], 
+ "reporting": [
+  {
+   "module": "console"
+  }, 
+  {
+   "dump-csv": "perf_result_csv.csv", 
+   "module": "final-stats", 
+   "summary": true, 
+   "failed-labels": false, 
+   "percentiles": true, 
+   "test-duration": true
+  }, 
+  {
+   "test": "Taurus test", 
+   "report-name": "Taurus test report", 
+   "token": "********", 
+   "project": "Taurus test project", 
+   "module": "blazemeter"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+---
+execution:
+- concurrency: 100
+  hold-for: 5m
+  iterations: 500
+  ramp-up: 1m
+  scenario: quick-test
+reporting:
+- module: console
+- dump-csv: perf_result_csv.csv
+  failed-labels: false
+  module: final-stats
+  percentiles: true
+  summary: true
+  test-duration: true
+- module: blazemeter
+  project: Taurus test project
+  report-name: Taurus test report
+  test: Taurus test
+  token: '********'
+scenarios:
+  quick-test:
+    requests:
+    - http://8b7de198.ngrok.io/client
+    - http://8b7de198.ngrok.io/order/decree
+    - http://8b7de198.ngrok.io/fee/payments
+
