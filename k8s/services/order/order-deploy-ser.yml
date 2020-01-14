@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: orden-api
 spec:
-  selector: 
+  selector:
     app: orden-api
   ports:
     - protocol: TCP
@@ -20,25 +20,26 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: orden-api 
+      app: orden-api
   template:
     metadata:
       labels:
         app: orden-api
     spec:
       containers:
-      - name: orden-micro
-        image: diegotony/orden-micro:k8s
-        ports:
-          - containerPort: 3037
-        env:
-          - name: MONGO_HOST
-            value: orden-mongo
-        # resources:
-        #   limits:
-        #     memory: "128Mi"
-        #     cpu: "500m"
-        imagePullPolicy: Always
+        - name: orden-micro
+          image: diegotony/orden-micro:k8s
+          ports:
+            - containerPort: 3037
+          env:
+            - name: MONGO_HOST
+              value: orden-mongo
+            - name: REDIS_HOST
+              value: redis-publisher
+          # resources:
+          #   limits:
+          #     memory: "128Mi"
+          #     cpu: "500m"
+          imagePullPolicy: Always
 ---
-
 

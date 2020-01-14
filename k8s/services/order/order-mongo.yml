@@ -7,7 +7,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 256Mi
+      storage: 2Gi
 ---
 apiVersion: v1
 kind: Service
@@ -35,12 +35,12 @@ spec:
     spec:
       containers:
         - name: orden-mongo
-          image: mongo
+          image: mongo:4.0.14-xenial
           ports:
             - containerPort: 27017
           volumeMounts:
-           - name: orden-storage
-             mountPath: /data/db
+            - name: orden-storage
+              mountPath: /data/db
       volumes:
         - name: orden-storage
           persistentVolumeClaim:

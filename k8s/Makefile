@@ -25,5 +25,8 @@ delete-clusters:
 check:
 	kubectl get pods --watch
 
+testing:
+	kubectl apply -f services/billing/billing-mongo.yml
+	kubectl apply -f services/billing/billing-deploy-ser.yml
 
 .PHONY: start-clusters delete-clusters

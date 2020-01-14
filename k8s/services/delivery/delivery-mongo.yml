@@ -7,7 +7,8 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 256Mi
+      storage: 2Gi
+  storageClassName: do-block-storage
 ---
 apiVersion: v1
 kind: Service
@@ -39,8 +40,8 @@ spec:
           ports:
             - containerPort: 27017
           volumeMounts:
-           - name: delivery-storage
-             mountPath: /data/db
+            - name: delivery-storage
+              mountPath: /data/db
       volumes:
         - name: delivery-storage
           persistentVolumeClaim:

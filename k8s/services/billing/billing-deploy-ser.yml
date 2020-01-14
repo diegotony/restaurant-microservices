@@ -34,6 +34,8 @@ spec:
         env:
           - name: MONGO_HOST
             value: billing-mongo
+          - name: REDIS_HOST
+            value: redis-publisher
         # resources:
         #   limits:
         #     memory: "128Mi"
