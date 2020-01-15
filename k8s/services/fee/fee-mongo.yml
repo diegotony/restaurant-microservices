@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: delivery-mongo-pvc
+  name: fee-mongo-pvc
 spec:
   accessModes:
     - ReadWriteOnce
@@ -9,14 +9,15 @@ spec:
     requests:
       storage: 2Gi
   storageClassName: do-block-storage
+  
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: delivery-mongo
+  name: fee-mongo
 spec:
   selector:
-    app: delivery-mongo
+    app: fee-mongo
   ports:
     - port: 27017
       targetPort: 27017
@@ -24,25 +25,25 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: delivery-mongo
+  name: fee-mongo
 spec:
   selector:
     matchLabels:
-      app: delivery-mongo
+      app: fee-mongo
   template:
     metadata:
       labels:
-        app: delivery-mongo
+        app: fee-mongo
     spec:
       containers:
-        - name: delivery-mongo
+        - name: fee-mongo
           image: mongo
           ports:
             - containerPort: 27017
           volumeMounts:
-            - name: delivery-storage
+            - name: fee-storage
               mountPath: /data/db
       volumes:
-        - name: delivery-storage
+        - name: fee-storage
           persistentVolumeClaim:
-            claimName: delivery-mongo-pvc
+            claimName: fee-mongo-pvc

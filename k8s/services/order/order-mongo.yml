@@ -8,6 +8,7 @@ spec:
   resources:
     requests:
       storage: 2Gi
+  storageClassName: do-block-storage
 ---
 apiVersion: v1
 kind: Service

@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: client-api
 spec:
-  selector: 
+  selector:
     app: client-api
   ports:
     - protocol: TCP
@@ -20,25 +20,26 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: client-api 
+      app: client-api
   template:
     metadata:
       labels:
         app: client-api
     spec:
       containers:
-      - name: client-micro
-        image: diegotony/client-micro:k8s
-        ports:
-          - containerPort: 3011
-        env:
-          - name: MONGO_HOST
-            value: client-mongo
-        # resources:
-        #   limits:
-        #     memory: "128Mi"
-        #     cpu: "500m"
-        imagePullPolicy: Always
+        - name: client-micro
+          image: diegotony/client-micro:k8s
+          ports:
+            - containerPort: 3011
+          env:
+            - name: MONGO_HOST
+              value: client-mongo
+            - name: REDIS_HOST
+              value: redis-publisher
+          # resources:
+          #   limits:
+          #     memory: "128Mi"
+          #     cpu: "500m"
+          imagePullPolicy: Always
 ---
-
 
