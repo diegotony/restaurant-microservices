@@ -3,13 +3,14 @@ kind: Service
 metadata:
   name: fee-api
 spec:
+  type: LoadBalancer
   selector: 
     app: fee-api
   ports:
     - protocol: TCP
       port: 80
       targetPort: 3019
-  type: LoadBalancer
+      name: http
 
 ---
 apiVersion: apps/v1
@@ -36,11 +37,11 @@ spec:
             value: fee-mongo
           - name: REDIS_HOST
             value: redis-publisher
-        # resources:
-        #   limits:
-        #     memory: "128Mi"
-        #     cpu: "500m"
+          - name: MODE
+            value: sandbox
+          - name: CLIENT_ID
+            value: EBWKjlELKMYqRNQ6sYvFo64FtaRLRR5BdHEESmha49TM
+          - name: CLIENT_SECRET
+            value: EO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHEESmha49TM
+            
         imagePullPolicy: Always
----
-
-

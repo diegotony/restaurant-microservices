@@ -1,16 +1,15 @@
 execution:
 - concurrency: 100  # cantidad de usuarios virtuales concurrentes objetivo
-  ramp-up: 1m   # tiempo de aceleración para alcanzar la concurrencia objetivo
-  hold-for: 5m # tiempo para mantener la concurrencia objetivo
+  ramp-up: 30s   # tiempo de aceleración para alcanzar la concurrencia objetivo
+  hold-for: 3m # tiempo para mantener la concurrencia objetivo
   scenario: quick-test
-  iterations: 500
+  iterations: 100
 
 scenarios:
   quick-test:
     requests:
-    - http://b273ef20.ngrok.io/client
-    - http://b273ef20.ngrok.io/order/decree
-    - http://b273ef20.ngrok.io/fee/payments
+    - http://167.99.27.17/api-order/decree
+    - http://167.99.27.17/api-client
 
 
 reporting:

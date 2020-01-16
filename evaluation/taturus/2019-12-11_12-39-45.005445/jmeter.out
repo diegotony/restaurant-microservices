@@ -1,7 +1,0 @@
-Created the tree successfully using /home/tony/thesis/restaurant-microservices/evaluation/taturus/2019-12-11_12-39-45.005445/modified_requests.jmx
-Starting the test @ Wed Dec 11 12:39:51 ECT 2019 (1576085991874)
-Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
-Command: Shutdown received from /127.0.0.1
-Command: StopTestNow received from /127.0.0.1
-Tidying up ...    @ Wed Dec 11 12:44:59 ECT 2019 (1576086299263)
-... end of run

@@ -14,7 +14,7 @@ start-apis:
 
 start-gate:
 	kubectl create configmap kongconfig --from-file=gateway/conf.d
-	kubectl apply -f gateway/deployment.yaml
+	kubectl apply -f gateway/gateway-deploy-ser.yaml
 
 delete-all:
 	# APIS clusters
@@ -29,7 +29,8 @@ delete-all:
 	kubectl delete -f services/fee/fee-deploy-ser.yml
 	kubectl delete -f services/order/order-deploy-ser.yml
 	# Gateway shutdown
-	kubectl delete -f gateway/deployment.yaml
+	kubectl delete -f gateway/gateway-deploy-ser.yaml
+	kubectl delete -n default configmap kongconfig
 
 
 check:

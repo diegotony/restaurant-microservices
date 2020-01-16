@@ -3,13 +3,14 @@ kind: Service
 metadata:
   name: client-api
 spec:
+  type: LoadBalancer
   selector:
     app: client-api
   ports:
     - protocol: TCP
       port: 80
       targetPort: 3011
-  type: LoadBalancer
+      name: http
 
 ---
 apiVersion: apps/v1
@@ -36,6 +37,8 @@ spec:
               value: client-mongo
             - name: REDIS_HOST
               value: redis-publisher
+            # - name: PORT
+            #   value: 3011
           # resources:
           #   limits:
           #     memory: "128Mi"

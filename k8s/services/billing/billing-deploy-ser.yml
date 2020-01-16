@@ -3,13 +3,14 @@ kind: Service
 metadata:
   name: billing-api
 spec:
+  type: LoadBalancer
   selector: 
     app: billing-api
   ports:
     - protocol: TCP
       port: 80
       targetPort: 3001
-  type: LoadBalancer
+      name: http
 
 ---
 apiVersion: apps/v1
@@ -36,10 +37,7 @@ spec:
             value: billing-mongo
           - name: REDIS_HOST
             value: redis-publisher
-        # resources:
-        #   limits:
-        #     memory: "128Mi"
-        #     cpu: "500m"
+
         imagePullPolicy: Always
 ---
 

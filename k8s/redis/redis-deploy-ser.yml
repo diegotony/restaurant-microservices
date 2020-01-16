@@ -7,7 +7,7 @@ spec:
     app: redis-publisher
   ports:
     - protocol: TCP
-      port: 80
+      port: 6379
       targetPort: 6379
   type: LoadBalancer
 

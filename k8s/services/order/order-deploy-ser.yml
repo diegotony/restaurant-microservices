@@ -3,13 +3,14 @@ kind: Service
 metadata:
   name: orden-api
 spec:
+  type: LoadBalancer
   selector:
     app: orden-api
   ports:
     - protocol: TCP
       port: 80
       targetPort: 3037
-  type: LoadBalancer
+      name: http
 
 ---
 apiVersion: apps/v1
@@ -36,10 +37,8 @@ spec:
               value: orden-mongo
             - name: REDIS_HOST
               value: redis-publisher
-          # resources:
-          #   limits:
-          #     memory: "128Mi"
-          #     cpu: "500m"
+            # - name: PORT
+            #   value: 3037
           imagePullPolicy: Always
 ---
 

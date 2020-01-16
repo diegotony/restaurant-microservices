@@ -1,23 +1,34 @@
 _format_version: "1.1"
 
 services:
-- name: api-order
-  url:  http://192.168.39.63:31222
+
+- name: api-billing
+  url: http://165.227.242.93
   routes:
-  - name: api-order
+  - name: api-billing
     paths:
-    - /api-order
+    - /api-billing
 
 - name: api-client
-  url:  http://192.168.39.63:30665
+  url:  http://167.99.27.14  
   routes:
   - name: api-client
     paths:
     - /api-client
 
-# - name: api-billing
-#   url: http://192.168.39.60:31291
-#   routes:
-#   - name: api-order
-#     paths:
-#     - /api-billing
+- name: api-fee
+  url: http://159.89.221.159 
+  routes:
+  - name: api-fee
+    paths:
+    - /api-fee
+
+- name: api-order
+  url:  http://159.89.220.83  
+  routes:
+  - name: api-order
+    paths:
+    - /api-order
+
+
+
