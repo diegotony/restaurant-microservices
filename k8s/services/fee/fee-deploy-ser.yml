@@ -9,7 +9,7 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 3019
+      targetPort: 3041
       name: http
 
 ---
@@ -18,7 +18,7 @@ kind: Deployment
 metadata:
   name: fee-api
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: fee-api 
@@ -31,7 +31,7 @@ spec:
       - name: fee-micro
         image: diegotony/fee-micro:k8s
         ports:
-          - containerPort: 3019
+          - containerPort: 3041
         env:
           - name: MONGO_HOST
             value: fee-mongo

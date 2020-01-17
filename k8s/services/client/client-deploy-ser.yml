@@ -18,7 +18,7 @@ kind: Deployment
 metadata:
   name: client-api
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: client-api

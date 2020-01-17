@@ -18,7 +18,7 @@ kind: Deployment
 metadata:
   name: orden-api
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: orden-api

@@ -18,7 +18,7 @@ kind: Deployment
 metadata:
   name: billing-api
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: billing-api 
