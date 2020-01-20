@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apis
+  labels:
+    app: apis
+spec:
+  containers:
+  - name: orden-api
+    image: diegotony/orden-micro:k8s
+    ports:
+      - containerPort: 3037
+    env:
+      - name: MONGO_HOST
+        value: orden-mongo
+      - name: REDIS_HOST
+        value: redis-publisher
+    imagePullPolicy: Always
+  volumes:
+  - name: orden-storage
+    persistentVolumeClaim:
+      claimName: orden-mongo-pvc
+

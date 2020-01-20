@@ -1,0 +1,5 @@
+Created the tree successfully using /home/tony/thesis/restaurant-microservices/evaluation/istio/1sca100vu100i30s3m/2020-01-19_23-39-44.508026/modified_requests.jmx
+Starting the test @ Sun Jan 19 23:39:56 ECT 2020 (1579495196632)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+Tidying up ...    @ Sun Jan 19 23:42:21 ECT 2020 (1579495341128)
+... end of run
