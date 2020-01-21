@@ -1,0 +1,49 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: billing-mongo-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  # storageClassName: do-block-storage
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: billing-mongo
+spec:
+  selector:
+    app: billing-mongo
+  ports:
+    - port: 27017
+      targetPort: 27017
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: billing-mongo
+spec:
+  selector:
+    matchLabels:
+      app: billing-mongo
+  template:
+    metadata:
+      labels:
+        app: billing-mongo
+    spec:
+      containers:
+        - name: billing-mongo
+          image: mongo:4.0.14-xenial
+          ports:
+            - containerPort: 27017
+          volumeMounts:
+            - name: billing-storage
+              mountPath: /data/db
+      volumes:
+        - name: billing-storage
+          persistentVolumeClaim:
+            claimName: billing-mongo-pvc

@@ -1,0 +1,48 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-api
+spec:
+  type: LoadBalancer
+  selector:
+    app: client-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3011
+      name: http
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client-api
+  template:
+    metadata:
+      labels:
+        app: client-api
+    spec:
+      containers:
+        - name: client-micro
+          image: diegotony/client-micro:k8s
+          ports:
+            - containerPort: 3011
+          env:
+            - name: MONGO_HOST
+              value: client-mongo
+            - name: REDIS_HOST
+              value: redis-publisher
+            # - name: PORT
+            #   value: 3011
+          # resources:
+          #   limits:
+          #     memory: "128Mi"
+          #     cpu: "500m"
+          imagePullPolicy: Always
+---
+

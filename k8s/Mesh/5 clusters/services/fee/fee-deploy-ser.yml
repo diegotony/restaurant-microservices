@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fee-api
+spec:
+  type: LoadBalancer
+  selector: 
+    app: fee-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3041
+      name: http
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fee-api
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: fee-api 
+  template:
+    metadata:
+      labels:
+        app: fee-api
+    spec:
+      containers:
+      - name: fee-micro
+        image: diegotony/fee-micro:k8s
+        ports:
+          - containerPort: 3041
+        env:
+          - name: MONGO_HOST
+            value: fee-mongo
+          - name: REDIS_HOST
+            value: redis-publisher
+          - name: MODE
+            value: sandbox
+          - name: CLIENT_ID
+            value: EBWKjlELKMYqRNQ6sYvFo64FtaRLRR5BdHEESmha49TM
+          - name: CLIENT_SECRET
+            value: EO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHEESmha49TM
+            
+        imagePullPolicy: Always
