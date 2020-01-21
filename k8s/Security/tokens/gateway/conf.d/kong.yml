@@ -4,32 +4,46 @@ services:
 
 
 - name: api-billing
-  url: http://35.247.218.115
+  url: http://34.95.136.252
   routes:
   - name: api-billing
     paths:
     - /api-billing
 
 - name: api-client
-  url:  http://34.95.213.242
+  url:  http://34.95.207.18
   routes:
   - name: api-client
     paths:
     - /api-client
 
 - name: api-fee
-  url: http://35.198.59.0
+  url: http://34.95.167.124
   routes:
   - name: api-fee
     paths:
     - /api-fee
 
 - name: api-order
-  url:  http://34.95.155.111
+  url:  http://35.247.218.115 
   routes:
   - name: api-order
     paths:
     - /api-order
 
+consumers:
+- username: my-user
+  keyauth_credentials:
+  - key: my-key
 
 
+plugins:
+- name: cors
+  service: api-billing
+  config: 
+    origins: http://mockbin.com
+    methods: GET, POST
+    headers: Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Auth-Token
+    exposed_headers: X-Auth-Token
+    credentials: true
+    max_age: 3600
