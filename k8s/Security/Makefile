@@ -1,4 +1,4 @@
- start-clusters:
+start-clusters:
 	sh scripts/create_clusters.sh
 
 start-apis:
@@ -7,33 +7,14 @@ start-apis:
 start-gate:
 	sh scripts/create_kong.sh
 
+start-all:
+	sh scripts/create_all.sh
 
 delete-all:
-	# APIS clusters
-	kubectl delete -f redis/redis-deploy-ser.yml
-	kubectl delete -f services/billing/billing-mongo.yml
-	kubectl delete -f services/client/client-mongo.yml
-	kubectl delete -f services/fee/fee-mongo.yml
-	kubectl delete -f services/order/order-mongo.yml
-	# APIS shutdown
-	kubectl delete -f services/billing/billing-deploy-ser.yml
-	kubectl delete -f services/client/client-deploy-ser.yml
-	kubectl delete -f services/fee/fee-deploy-ser.yml
-	kubectl delete -f services/order/order-deploy-ser.yml
-	# Gateway shutdown
-	#kubectl delete -f gateway/gateway-deploy-ser.yaml
-	#kubectl delete -n default configmap kongconfig
-	kubectl delete -f kong/kong.yml
-
+	sh scripts/delete_all.sh
 
 delete-gate:
-
-	# kubectl delete -f gateway/gateway-deploy-ser.yaml
-	# kubectl delete -n default configmap kongconfig
-	kubectl delete -f kong/paths.yml
-	kubectl delete -f kong/plugins.yml
-
-
+	sh scripts/delete_kong.sh
 
 check:
 	kubectl get pods --watch
@@ -50,4 +31,4 @@ testing-end:
 	kubectl delete -f services/fee/fee-mongo.yml
 	kubectl delete -f services/fee/fee-deploy-ser.yml
 
-.PHONY: start-clusters delete-all start-apis check start-gate
+.PHONY: start-clusters delete-all start-apis check start-gate start-all
