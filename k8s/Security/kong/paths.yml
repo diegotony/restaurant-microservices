@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: client-api
+spec:
+  rules:
+  - host: leviathan.com
+  - http:
+      paths:
+      - path: /billing
+        backend:
+          serviceName: billing-api
+          servicePort: 80
+      - path: /client
+        backend:
+          serviceName: client-api
+          servicePort: 80
+      - path: /fee
+        backend:
+          serviceName: fee-api
+          servicePort: 80
+      - path: /orden
+        backend:
+          serviceName: orden-api
+          servicePort: 80
+
+  tls:
+  - secretName: joomla-tls-cert
+    hosts:
+    - leviathan.com

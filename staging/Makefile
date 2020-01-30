@@ -21,6 +21,7 @@ down-server:
 
 
 upgrade-image:
+	docker build  -t $(IMAGE)b . --no-cache
 	docker push $(IMAGE)
 
 .PHONY: up-server down-server upgrade-image
