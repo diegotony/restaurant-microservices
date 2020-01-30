@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: client-api
+  labels:
+    app: client-api
 spec:
   type: LoadBalancer
   selector:
@@ -17,6 +19,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: client-api
+  labels:
+    app: client-api
 spec:
   replicas: 1
   selector:

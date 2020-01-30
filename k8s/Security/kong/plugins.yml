@@ -5,23 +5,23 @@ metadata:
 config:
   header_name: my-request-id
 plugin: correlation-id
----
-apiVersion: configuration.konghq.com/v1
-kind: KongPlugin
-metadata:
-  name: bot-detection
-config:
-  header_name: my-request-id
-plugin: correlation-id
----
-apiVersion: configuration.konghq.com/v1
-kind: KongPlugin
-metadata:
-  name: request-termination
-  config: 
-    status_code: 403
-    message: Upps! Houston parece que paso algo en el motor!
-plugin: request-termination
+# ---
+# apiVersion: configuration.konghq.com/v1
+# kind: KongPlugin
+# metadata:
+#   name: bot-detection
+# config:
+#   header_name: my-request-id
+# plugin: bot-detection
+# ---
+# apiVersion: configuration.konghq.com/v1
+# kind: KongPlugin
+# metadata:
+#   name: request-termination
+#   config: 
+#     status_code: 403
+#     message: Upps! Houston parece que paso algo en el motor!
+# plugin: request-termination
 ---
 apiVersion: configuration.konghq.com/v1
 kind: KongPlugin
