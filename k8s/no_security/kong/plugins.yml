@@ -1,0 +1,54 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: request-id
+config:
+  header_name: my-request-id
+plugin: correlation-id
+# ---
+# apiVersion: configuration.konghq.com/v1
+# kind: KongPlugin
+# metadata:
+#   name: bot-detection
+# config:
+#   header_name: my-request-id
+# plugin: bot-detection
+# ---
+# apiVersion: configuration.konghq.com/v1
+# kind: KongPlugin
+# metadata:
+#   name: request-termination
+#   config: 
+#     status_code: 403
+#     message: Upps! Houston parece que paso algo en el motor!
+# plugin: request-termination
+---
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: rl-by-ip
+config:
+  minute: 3
+  limit_by: ip
+  policy: local
+plugin: rate-limiting
+---
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: cors
+config:
+  origins: leviathan.com
+  methods:
+    - GET
+    - POST
+  headers:
+    - Accept
+    - Accept-Version
+    - Content-Length
+    - Content-MD5
+    - Content-Type
+    - Date
+    - X-Auth-Token
+  max_age: 3600
+plugin: cors

@@ -1,0 +1,5 @@
+Created the tree successfully using /home/tony/thesis/restaurant-microservices/evaluation/docker/5 clusters/no_security/2020-01-30_21-25-01.345072/modified_requests.jmx
+Starting the test @ Thu Jan 30 21:25:12 ECT 2020 (1580437512824)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+Tidying up ...    @ Thu Jan 30 21:27:30 ECT 2020 (1580437650716)
+... end of run
