@@ -1,0 +1,6 @@
+labelId,labelName,samples,avgResponseTime,90line,95line,99line,minResponseTime,maxResponseTime,avgLatency,stDev,duration,avgBytes,avgThroughput,medianResponseTime,errorsCount,errorsRate,hasLabelPassedThresholds
+ALL,ALL,40000,260,416,421,434,197,1423,260,275,133,97.803,300.752,0,0,0,
+ed9220cbb6fd364897b9305a1da34c01,http://34.95.136.252/billing,10000,208,214,217,244,197,318,208,208,133,22.689,75.188,0,0,0,
+30441ccce0edcda6d6b2856b344e122e,http://34.95.136.252/client,10000,208,214,217,241,197,317,208,208,133,25.038,75.188,0,0,0,
+1545d198613e6cda4d1d3bbf9211e100,http://34.95.136.252/fee,10000,208,213,217,240,197,318,208,208,133,25.038,75.188,0,0,0,
+eb899813de28e3dce087d489b14ff2ea,http://34.95.136.252/orden,10000,416,426,431,478,395,1423,416,416,133,25.038,75.188,0,0,0,

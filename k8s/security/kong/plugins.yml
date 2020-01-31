@@ -1,12 +1,12 @@
-# apiVersion: configuration.konghq.com/v1
-# kind: KongPlugin
-# metadata:
-#   name: rl-by-ip
-# config:
-#   second: 50
-#   policy: local
-# plugin: rate-limiting
----
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: rl-by-ip
+config:
+  second: 200
+  policy: local
+plugin: rate-limiting
+# ---
 # apiVersion: configuration.konghq.com/v1
 # kind: KongPlugin
 # metadata:
@@ -15,22 +15,23 @@
 #   header_name: my-request-id
 # plugin: correlation-id
 # ---
-apiVersion: configuration.konghq.com/v1
-kind: KongPlugin
-metadata:
-  name: cors
-config:
-  origins: leviathan.com
-  methods:
-    - GET
-    - POST
-  headers:
-    - Accept
-    - Accept-Version
-    - Content-Length
-    - Content-MD5
-    - Content-Type
-    - Date
-    - X-Auth-Token
-  max_age: 3600
-plugin: cors
+# apiVersion: configuration.konghq.com/v1
+# kind: KongPlugin
+# metadata:
+#   name: cors
+# config:
+#   origins: leviathan.com
+#   methods:
+#     - GET
+#     - POST
+#   headers:
+#     - Accept
+#     - Accept-Version
+#     - Content-Length
+#     - Content-MD5
+#     - Content-Type
+#     - Date
+#     - X-Auth-Token
+#   max_age: 3600
+# plugin: cors
+# 

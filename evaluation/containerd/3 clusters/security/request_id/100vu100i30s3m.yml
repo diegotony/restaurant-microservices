@@ -8,10 +8,10 @@ execution:
 scenarios:
   quick-test:
     requests:
-    - http://34.95.136.252/orden
-    - http://34.95.136.252/billing
-    - http://34.95.136.252/client
-    - http://34.95.136.252/fee
+    - http://34.95.207.18/orden
+    - http://34.95.207.18/billing
+    - http://34.95.207.18/client
+    - http://34.95.207.18/fee
 
 
 reporting:
