@@ -1,0 +1,1381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="230" lt="229" ts="1581229207103" s="false" lb="http://34.95.153.71//client" rc="502" rm="Bad Gateway" tn="quick-test 1-5" dt="text" de="UTF-8" by="317" ng="41" na="41">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:07 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 1
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//client</java.net.URL>
+</httpSample>
+<httpSample t="256" lt="256" ts="1581229207793" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-28" dt="text" de="UTF-8" by="317" ng="43" na="43">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:07 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="213" lt="213" ts="1581229209753" s="false" lb="http://34.95.153.71//client" rc="502" rm="Bad Gateway" tn="quick-test 1-47" dt="text" de="UTF-8" by="317" ng="49" na="49">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:09 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//client</java.net.URL>
+</httpSample>
+<httpSample t="225" lt="225" ts="1581229210343" s="false" lb="http://34.95.153.71//client" rc="502" rm="Bad Gateway" tn="quick-test 1-22" dt="text" de="UTF-8" by="317" ng="51" na="51">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:10 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//client</java.net.URL>
+</httpSample>
+<httpSample t="226" lt="226" ts="1581229210736" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-11" dt="text" de="UTF-8" by="317" ng="53" na="53">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:10 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="223" lt="223" ts="1581229211000" s="false" lb="http://34.95.153.71//client" rc="502" rm="Bad Gateway" tn="quick-test 1-21" dt="text" de="UTF-8" by="317" ng="54" na="54">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:11 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//client</java.net.URL>
+</httpSample>
+<httpSample t="213" lt="213" ts="1581229211165" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-24" dt="text" de="UTF-8" by="317" ng="54" na="54">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:11 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="298" lt="298" ts="1581229215774" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-44" dt="text" de="UTF-8" by="317" ng="70" na="70">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:15 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="222" lt="222" ts="1581229218676" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-23" dt="text" de="UTF-8" by="317" ng="79" na="79">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:18 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="208" lt="208" ts="1581229218826" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-73" dt="text" de="UTF-8" by="317" ng="80" na="80">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:18 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="3483" lt="3483" ts="1581229220427" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-18" dt="text" de="UTF-8" by="317" ng="96" na="96">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:23 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="253" lt="252" ts="1581229224150" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-64" dt="text" de="UTF-8" by="317" ng="97" na="97">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:24 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="241" lt="241" ts="1581229226447" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-48" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:26 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="354" lt="354" ts="1581229227801" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-15" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:27 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="228" lt="228" ts="1581229228421" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-47" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:28 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 4
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="234" lt="234" ts="1581229228423" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-63" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:28 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 3
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="219" lt="219" ts="1581229229170" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-1" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:29 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 1
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="212" lt="212" ts="1581229230626" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-89" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:30 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 1
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="215" lt="215" ts="1581229231334" s="false" lb="http://34.95.153.71//fee" rc="502" rm="Bad Gateway" tn="quick-test 1-43" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:31 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//fee</java.net.URL>
+</httpSample>
+<httpSample t="627" lt="627" ts="1581229235741" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-98" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:36 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 4
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="450" lt="450" ts="1581229238334" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-38" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:38 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="424" lt="424" ts="1581229238975" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-8" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:39 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="3445" lt="3445" ts="1581229236027" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-78" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:39 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 3
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="429" lt="429" ts="1581229239044" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-19" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:39 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="417" lt="417" ts="1581229240597" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-68" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:40 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="454" lt="454" ts="1581229240689" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-38" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:41 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 3
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="450" lt="450" ts="1581229240711" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-24" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:41 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 1
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="7504" lt="7504" ts="1581229233991" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-81" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:41 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="456" lt="456" ts="1581229241153" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-30" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:41 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="442" lt="442" ts="1581229241169" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-54" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:41 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="469" lt="469" ts="1581229241831" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-75" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:42 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="448" lt="448" ts="1581229242330" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-43" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:42 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="1455" lt="1455" ts="1581229241338" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-97" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:42 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 1
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="1455" lt="1454" ts="1581229241396" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-71" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:42 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="448" lt="448" ts="1581229242719" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-21" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:43 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 4
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="425" lt="425" ts="1581229243382" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-53" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:43 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 1
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="428" lt="428" ts="1581229243448" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-30" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:43 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="493" lt="493" ts="1581229243442" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-43" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:43 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="438" lt="438" ts="1581229244271" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-38" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:44 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 1
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="422" lt="422" ts="1581229244855" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-77" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:45 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="430" lt="430" ts="1581229245172" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-46" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:45 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="437" lt="437" ts="1581229245170" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-36" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:45 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="470" lt="470" ts="1581229245643" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-39" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:46 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="454" lt="454" ts="1581229245661" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-92" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:46 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="1453" lt="1453" ts="1581229244710" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-53" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:46 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 1
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="1436" lt="1436" ts="1581229244727" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-12" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:46 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="437" lt="437" ts="1581229245767" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-76" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:46 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="1488" lt="1488" ts="1581229244741" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-30" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:46 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="1445" lt="1445" ts="1581229244913" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-89" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:46 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="456" lt="456" ts="1581229245919" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-77" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:46 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+<httpSample t="439" lt="439" ts="1581229246431" s="false" lb="http://34.95.153.71//orden" rc="502" rm="Bad Gateway" tn="quick-test 1-24" dt="text" de="UTF-8" by="317" ng="100" na="100">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Date: Sun, 09 Feb 2020 06:20:46 GMT
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: kong/1.4.3
+X-Kong-Upstream-Latency: 0
+X-Kong-Proxy-Latency: 2
+Via: kong/1.4.3
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: 34.95.153.71
+User-Agent: Apache-HttpClient/4.5.7 (Java/11.0.6)
+</requestHeader>
+  <responseData class="java.lang.String">An invalid response was received from the upstream server
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://34.95.153.71//orden</java.net.URL>
+</httpSample>
+
+</testResults>
