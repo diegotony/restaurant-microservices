@@ -7,4 +7,4 @@ This repository was created to handle the configurations in microservices develo
 
 - Evaluation results with blazemeter, in the directory **evaluation/**
 
-- Scripts to automate the configuration of endpoints, in the **/scripts**
+- Scripts to automate the configuration of endpoints, in the **scripts/**
